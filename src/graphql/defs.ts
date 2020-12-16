@@ -19,7 +19,7 @@ type User {
 
 type EmployeeDaily {
   id: ID!
-  dailies: [Daily!]!
+  dailies(date: String): [Daily!]!
 }
 
 type Daily {
